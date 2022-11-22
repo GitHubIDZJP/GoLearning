@@ -17,7 +17,7 @@ func main() {
 	init_variable() //变量
 	init_constant() //常量
 	mainApi()
-	mainStudentApi()
+	//mainStudentApi()//学生接口
 	fmt.Println("\n")
 	//mainLogin()
 
@@ -51,6 +51,10 @@ func main() {
 	//gorm_Creating_Record() //gorm样板
 	//gorm_association_relationship_between_tables() //表之间关联关系
 	//gorm_association_gl() //表之间关联关系1
+
+	//官网:
+
+	mainKoyeb() //Koyeb
 
 	//t1 := time.Time{}
 	//t2 := time.Now()
