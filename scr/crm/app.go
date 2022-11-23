@@ -1,14 +1,14 @@
 package main //声明main包，表明当前是一个可执行程序
 import (
 	"fmt"
-) //导入内置 fmt
+)
 
-//import (
-//	"fmt"
-//)
+//"GO学习/scr/crm/test/common/message"
 
 // main函数 程序执行的入口
 func main() {
+	aa_main()
+	//moduleMain()
 	////fmt.Printin("叫爸爸123")
 	fmt.Println("sdsdds")
 	get01()
@@ -17,7 +17,7 @@ func main() {
 	init_variable() //变量
 	init_constant() //常量
 	mainApi()
-	//mainStudentApi()//学生接口
+	//mainStudentApi() //学生接口
 	fmt.Println("\n")
 	//mainLogin()
 
@@ -54,8 +54,12 @@ func main() {
 
 	//官网:
 
-	mainKoyeb() //Koyeb
+	//mainKoyeb() //Koyeb
+	//rootMain()
 
+	//gin官网:
+	//Model_binding_and_validation() //模型绑定和验证
+	//MultipartUrlBind() //多部分/URL 编码绑定
 	//t1 := time.Time{}
 	//t2 := time.Now()
 

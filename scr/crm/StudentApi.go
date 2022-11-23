@@ -103,3 +103,33 @@ func mainStudentApi() {
 	r.Run(":8080")
 
 }
+
+/*
+ {
+    "message": "响应成功",
+    "page": "1",
+    "pageSize": 2,
+    "result": {
+        "data": [
+            {
+                "name": "王强",
+                "age": "23",
+                "title": "一条倡议 一分钟征来10辆车",
+                "category": "头条",
+                "url": "https://mini.eastday.com/mobile/221115053930984942512.html"
+            },
+            {
+                "name": "习近平",
+                "age": "20",
+                "title": "甘肃农信系统切换停业公告",
+                "category": "小红书",
+                "url": "https://mini.eastday.com/mobile/221115052848888128599.html"
+            }
+        ],
+        "stat": "1"
+    },
+    "status": 200
+}
+
+
+*/
