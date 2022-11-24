@@ -25,14 +25,7 @@ type zjp_UserInfo struct {
 }
 
 func mainStudentApi() {
-	//var arrCount int = 20
-	//var vv = [4]zjp_UserInfo{}
-	//var arr = [...]zjp_UserInfo{}
-	//var name = [4]string{"王强", "刘树", "罗强", "画画"}
-	//var age string = [4]string{"王强", "刘树", "罗强", "画画"}
-	//var title string = [4]string{"王强", "刘树", "罗强", "画画"}
-	//var Category string = [4]string{"王强", "刘树", "罗强", "画画"}
-	//var url string = [4]string{"王强", "刘树", "罗强", "画画"}
+
 	r := gin.Default()
 	r.SetTrustedProxies([]string{"192.168.1.2"}) //设置代理，必须加上，不然下面会提示代理提示权限不安全
 	r.GET("/", func(obj *gin.Context) {
@@ -54,33 +47,6 @@ func mainStudentApi() {
 			Category: "小红书",
 			Url:      "https://mini.eastday.com/mobile/221115052848888128599.html",
 		}
-		//ss := zjp_UserInfo{
-		//	Name:     name,
-		//	Age:      "23",
-		//	Title:    "一条倡议 一分钟征来10辆车",
-		//	Category: "头条",
-		//	Url:      "https://mini.eastday.com/mobile/221115053930984942512.html",
-		//}
-
-		//for i := 0; i < len(name); i++ {
-		//	//fmt.Println("打印i:\n", i)
-		//	//append(vv, ss1)
-		//	//ss.Name = "sd" //string(i)
-		//	//ss.Name = "名字" + string(i)
-		//	var sc string = string(i)
-		//	sc += fmt.Sprintf("%s%d", name, i)
-		//	fmt.Println("醋酸钠:\n", sc)
-		//	ss := zjp_UserInfo{
-		//		Name:     string(name[i]),
-		//		Age:     "23",
-		//		Title:    string(name[i]),
-		//		Category: string(name[i]),
-		//		Url:      string(name[i]),
-		//	}
-		//	//fmt.Println("打印数组sdsd:\n", ss.Name)
-		//	vv = [4]zjp_UserInfo{ss}
-		//	arr.apped(vv, ss)
-		//}
 
 		vv := []zjp_UserInfo{ss, ss1}
 		//fmt.Println("打印数组:\n", uData.arrc)

@@ -1,5 +1,9 @@
 package main //声明main包，表明当前是一个可执行程序
 import (
+	//导入外部包
+	"crm/function1"
+	"crm/function2"
+	"crm/ginModule"
 	"fmt"
 )
 
@@ -7,16 +11,41 @@ import (
 
 // main函数 程序执行的入口
 func main() {
-	aa_main()
+	//s1 := "字符串"
+	//s2 := "拼接"
+	//s3 := s1 + s2
+	//fmt.Println(s3) //s3 = "打印字符串"
+
+	TestApiRequest()
+	//CEMTERComMain_sd()
+	//调用外部的函数
+	function1.Function1000()
+	function2.Function2()
+	//ginModule.Model_binding_and_validation() //模型绑定和验证
+	//ginModule.MultipartUrlBind() //URL编码绑定
+	//ginModule.RenderingMain() //渲染
+	//ginModule.ginNew() //中间件
+	//ginModule.CEMTERComMain()
+	//ginModule.A_file_upload() //单文件上传
+	//ginModule.Multiple_file_upload() //多个文件上传
+	//ginModule.HttpEncrypt() //加密,搞不懂
+	//ginModule.SetOrFetchCookie() //设置并获取cookie
+	//ginModule.ProvideStaticFile() //设置并获取cookie
+	//ginModule.FeedDataFromTheReader() //从阅读器提供数据
+	ginModule.SecureJSON() //安全json
+
+	//mainsd()
+
+	//aa_main()
 	//moduleMain()
 	////fmt.Printin("叫爸爸123")
 	fmt.Println("sdsdds")
-	get01()
+	//get01()
 
-	init_fetch()
-	init_variable() //变量
-	init_constant() //常量
-	mainApi()
+	//init_fetch()
+	//init_variable() //变量
+	//init_constant() //常量
+	//mainApi()
 	//mainStudentApi() //学生接口
 	fmt.Println("\n")
 	//mainLogin()

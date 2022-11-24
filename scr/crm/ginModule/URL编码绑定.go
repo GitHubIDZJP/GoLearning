@@ -1,4 +1,4 @@
-package main
+package ginModule
 
 import (
 	"github.com/gin-gonic/gin"
@@ -12,18 +12,24 @@ type LoginForm struct {
 func MultipartUrlBind() {
 	router := gin.Default()
 	router.POST("/login", func(c *gin.Context) {
-		// you can bind multipart form with explicit binding declaration:
-		// c.ShouldBindWith(&form, binding.Form)
-		// or you can simply use autobinding with ShouldBind method:
+		// 可以使用显式绑定声明绑定多部分表单:
+		//	 c.ShouldBindWith(&form, binding.Form)
+		//或者您可以简单地使用ShouldBind方法自动绑定:
 		var form LoginForm
-		// in this case proper binding will be automatically selected
+		// 在这种情况下，将自动选择适当的绑定
 		if c.ShouldBind(&form) == nil {
 			if form.User == "user" && form.Password == "password" {
-				c.JSON(200, gin.H{"status": "you are logged in"})
+				c.JSON(200, gin.H{"status": "登录了"})
 			} else {
-				c.JSON(401, gin.H{"status": "unauthorized"})
+				c.JSON(401, gin.H{"status": "未经许可"})
 			}
 		}
 	})
 	router.Run(":8080")
 }
+
+/*
+404 page not found
+
+
+*/

@@ -1,4 +1,4 @@
-package main
+package ginModule
 
 import (
 	"github.com/gin-gonic/gin"
