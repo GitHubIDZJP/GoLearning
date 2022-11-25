@@ -30,9 +30,34 @@ func main() {
 	//ginModule.Multiple_file_upload() //多个文件上传
 	//ginModule.HttpEncrypt() //加密,搞不懂
 	//ginModule.SetOrFetchCookie() //设置并获取cookie
-	//ginModule.ProvideStaticFile() //设置并获取cookie
+	//ginModule.ProvideStaticFile() //加载模版文件夹里的HTML
 	//ginModule.FeedDataFromTheReader() //从阅读器提供数据
-	ginModule.SecureJSON() //安全json
+	//ginModule.SecureJSON() //安全json---->写了个Api
+
+	//ginModule.RunMultipteServer() //运行多个服务
+
+	//ginModule.Redirection() //重定向
+	//ginModule.PostSendHttpRedirection() //从 POST 发出 HTTP 重定向
+	//	ginModule.SenderRouterRedirection() //发出路由器重定向，使用HandleContext
+	//ginModule.SearchStrParameter() //查询字符串参数
+
+	//ginModule.QueryAndPublishForms() //查询和发布表单
+
+	//ginModule.PureJSON() //纯JSON
+	//ginModule.ParamtersPath() //路径中的参数//--没搞定有啥用
+	//ginModule.BindOnlyInQueryString() //只绑定查询字符串
+	//ginModule.BindOnlyInQueryStringTest() //只绑定查询字符串
+	//ginModule.MultipleTemplatePlate() //模版
+	ginModule.MultipleTemplateAdvanced() //多模版进阶
+	//ginModule.
+	//ginModule.
+	//ginModule.
+	//ginModule.
+	//ginModule.
+	//ginModule.
+	//ginModule.
+	//ginModule.
+	//ginModule.
 
 	//mainsd()
 
