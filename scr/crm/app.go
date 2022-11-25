@@ -49,7 +49,7 @@ func main() {
 	//ginModule.BindOnlyInQueryStringTest() //只绑定查询字符串
 	//ginModule.MultipleTemplatePlate() //模版
 	ginModule.MultipleTemplateAdvanced() //多模版进阶
-	//ginModule.
+	//ginModule. //HTML
 	//ginModule.
 	//ginModule.
 	//ginModule.
